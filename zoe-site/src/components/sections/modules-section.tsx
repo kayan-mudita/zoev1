@@ -16,13 +16,13 @@ type Module = {
 const modules: Module[] = [
   {
     id: 'burn',
-    name: 'Burn & Runway Triage',
+    name: 'Burn & Runway Recovery',
     delta: { label: 'Runway impact', value: '+3–6 months' },
     description:
-      'Stress-tests unit economics, hiring plans, and vendor spend to extend runway without stalling momentum.',
+      'Zoe builds a clear, fix-first path to extend runway without killing momentum.',
     firstMoves: [
       'Rebuild burn bridge & cash waterfall',
-      'Segment spend vs. growth contributions',
+      'Segment spend vs growth contribution',
       'Sequence corrective plays with owners',
     ],
     metrics: [
@@ -120,8 +120,8 @@ export const ModulesSection = () => {
       <div className="container">
         <SectionHeading
           eyebrow="Diagnostic Modules"
-          title="Pick the pressure points. ZOE assembles the right playbooks."
-          description="Start with one module or run the full scan. Each diagnostic produces So-What Cards with owners, impact, and confidence ratings — ready for board review."
+          title="Pick the pressure points. ZOE assembles the right recovery plan."
+          description="Each module outputs So-What Cards with owners, impact, confidence, and timelines so operators can move fast without guesswork."
         />
 
         <div className="mt-16 grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">

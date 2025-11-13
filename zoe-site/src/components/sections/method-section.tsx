@@ -5,45 +5,51 @@ import { SectionHeading } from '@/components/ui/section-heading'
 
 const steps = [
   {
-    name: 'Intake',
-    window: 'Days 0–3',
-    copy: 'Secure connectors (finance, GTM, HRIS) + operator interviews + sentiment baseline.',
-    deliverable: 'Access log & diagnostic scope, founder priorities recorded.',
+    name: 'Days 0–5 — Intake & Baseline',
+    window: 'Stage 1',
+    copy: 'We gather the essential data, meet with leadership, and establish the health baseline that reveals where momentum is leaking.',
+    deliverable: 'Flow · Pulse',
   },
   {
-    name: 'Truth',
-    window: 'Days 4–10',
-    copy: 'AI anomaly scan + cohort benchmarks + qualitative synthesis from interviews.',
-    deliverable: 'Draft So-What Cards with impact sizing and confidence bands.',
+    name: 'Days 6–14 — Root Cause Model',
+    window: 'Stage 2',
+    copy: 'AI patterns + operator interviews expose the true drivers of drag across cash, GTM, delivery, org, and decision rhythm.',
+    deliverable: 'Flow · Pulse',
   },
   {
-    name: 'Decision',
-    window: 'Days 11–15',
-    copy: 'Founder-first readout. CEO curates what moves forward. Board preview deck refined.',
-    deliverable: 'Approved So-What Cards with owners and deadlines.',
+    name: 'Days 15–21 — Founder Alignment',
+    window: 'Stage 3',
+    copy: 'Private CEO readout, curated deltas, and proposed interventions for approval before anything moves upstream.',
+    deliverable: 'Flow · Pulse',
   },
   {
-    name: 'Execution',
-    window: 'Days 16–45',
-    copy: 'Operator Fellows and internal leaders launch plays, clear blockers, and update ROI tracker weekly.',
-    deliverable: '90-day operator plan + weekly pulse + risk log.',
+    name: 'Days 22–60 — Play Launch & Momentum Reset',
+    window: 'Stage 4',
+    copy: 'Operators embed to launch high-leverage plays, unblock execution, and track ROI while teams regain velocity.',
+    deliverable: 'Flow · Pulse',
   },
   {
-    name: 'Pulse',
-    window: 'Monthly after',
-    copy: 'Light instrumentation tracks KPI movement, anomalies, and adoption. Board sees deltas, not dashboards.',
-    deliverable: 'Founder-controlled board memo + ROI tracker.',
+    name: 'Days 60–90 — Systems & Cadence Stabilization',
+    window: 'Stage 5',
+    copy: 'We reinforce new operating rhythms, close remaining gaps, and ensure corrective actions continue without operator load.',
+    deliverable: 'Flow · Pulse',
+  },
+  {
+    name: 'Day 90+ — Monthly Pulse',
+    window: 'Stage 6',
+    copy: 'Lightweight health checks track improvement, catch anomalies, and give the board deltas—not dashboards.',
+    deliverable: 'Flow · Pulse',
   },
 ]
 
 export const MethodSection = () => (
   <section id="method" className="relative isolate py-24 sm:py-32">
     <div className="container">
-      <SectionHeading
-        eyebrow="Method"
-        title="Healthcare for companies: vitals → diagnosis → prescription → follow-up."
-        description="ZOE productizes veteran operator instincts into a system your founders trust and your board believes. No bloat, no 200-slide decks."
-      />
+        <SectionHeading
+          eyebrow="A staged recovery cycle built from real operator mileage."
+          title="We diagnose, align, intervene, and sustain lift without overwhelming the team."
+          description="Zoe runs the same operational sequences we’ve used across dozens of venture-backed companies—paced to get the business healthy again."
+        />
 
       <div className="relative mt-16 overflow-hidden rounded-2xl border border-white/10 bg-graphite/80 shadow-inner-line">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(0deg,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[length:120px_120px] opacity-40" aria-hidden="true" />

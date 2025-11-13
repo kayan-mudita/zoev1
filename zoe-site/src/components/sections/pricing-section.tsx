@@ -94,10 +94,10 @@ export const PricingSection = () => (
           <strong className="text-offwhite">Risk reversal:</strong> money-back if the board rates “no value.” Funds and OpCos can split invoices. Deferred billing available pre-raise.
         </p>
         <a
-          href="#pricing-cta"
+          href="https://calendly.com/kayan-muditastudios/zoe-diagnostic-meeting"
           className="inline-flex items-center justify-center rounded-full border border-cyan/40 px-6 py-3 text-sm font-semibold text-cyan transition hover:border-cyan hover:bg-cyan/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
         >
-          Get Pricing &amp; Scope →
+          Meet Our Team
         </a>
       </div>
     </div>

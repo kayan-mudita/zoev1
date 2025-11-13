@@ -5,16 +5,16 @@ import { SectionHeading } from '@/components/ui/section-heading'
 
 const timeline = [
   {
-    label: 'Intake secured',
-    detail: 'Read-only connectors, DPA signed. Founder signs off on every data source.',
+    label: 'CEO intake huddle',
+    detail: 'Day 0. We meet privately with the CEO to align on goals, redactions, and who sits in the loop.',
   },
   {
-    label: 'CEO readout',
-    detail: 'Private draft. CEO curates what flows to the board and what stays internal.',
+    label: 'Twice-weekly check-ins',
+    detail: 'ZOE operators and the CEO tighten plays every 3–4 days. Nothing moves forward without that touchpoint.',
   },
   {
-    label: 'Board memo',
-    detail: 'Operator-authored memo with approved cards, ROI tracker, and redacted sensitivities.',
+    label: 'Board preview sync',
+    detail: 'Final cards, ROI gates, and risks reviewed with the CEO before partners see a single slide.',
   },
 ]
 
@@ -46,7 +46,7 @@ export const GuaranteeSection = () => (
           <ul className="mt-8 space-y-4 text-sm text-slate/80">
             <li className="flex gap-3">
               <span className="mt-1 h-2 w-2 rounded-full bg-cyan/70" aria-hidden="true" />
-              <span>No hidden stakeholders in the room. We clear partner involvement up front.</span>
+              <span>No surveillance. No back-channeling. No board-side access to raw signal.</span>
             </li>
             <li className="flex gap-3">
               <span className="mt-1 h-2 w-2 rounded-full bg-cyan/70" aria-hidden="true" />

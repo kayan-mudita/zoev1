@@ -1,49 +1,48 @@
 'use client'
 
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const navItems = [
-  { label: 'Product', href: '#solution' },
-  { label: 'Modules', href: '#modules' },
-  { label: 'Outcomes', href: '#outcomes' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'Contact', href: '#cta' },
+  { label: 'Home', href: '/' },
+  { label: 'Investors', href: '/investors' },
+  { label: 'Operators', href: '/operators' },
 ]
 
 export const Header = () => {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+
+  const navItemClasses = (href: string) => {
+    const isActive = pathname === href
+    return [
+      'rounded-full px-4 py-2 text-sm transition-all duration-200',
+      isActive ? 'bg-offwhite text-charcoal shadow-glow-cyan' : 'text-slate/70 hover:text-offwhite hover:bg-white/5',
+    ].join(' ')
+  }
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/5 bg-charcoal/60 backdrop-blur-xl">
       <div className="container flex items-center justify-between py-4">
-        <a href="#hero" className="text-sm font-semibold uppercase tracking-[0.4em] text-offwhite">
+        <Link href="/" className="text-sm font-semibold uppercase tracking-[0.4em] text-offwhite">
           ZOE
-        </a>
-        <nav className="hidden items-center gap-8 text-sm text-slate/70 lg:flex">
+        </Link>
+        <nav className="hidden rounded-full border border-white/10 bg-white/5 p-1 lg:flex">
           {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="relative transition-colors duration-200 hover:text-offwhite"
-            >
+            <Link key={item.label} href={item.href} className={navItemClasses(item.href)}>
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href="mailto:hello@zoe.ai?subject=Contact%20ZOE"
-            className="rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-offwhite transition-colors hover:border-cyan hover:text-cyan"
-          >
-            Contact Us
-          </a>
-          <a
-            href="#book"
+          <Link
+            href="https://calendly.com/kayan-muditastudios/zoe-diagnostic-meeting"
             className="rounded-full bg-offwhite px-4 py-2 text-sm font-semibold text-charcoal transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-glow-cyan"
           >
-            Book Diagnostic
-          </a>
+            Meet Our Team
+          </Link>
         </div>
         <button
           type="button"
@@ -67,29 +66,23 @@ export const Header = () => {
           >
             <div className="container flex flex-col gap-4 py-6 text-sm text-offwhite/90">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
                   href={item.href}
                   onClick={() => setOpen(false)}
                   className="transition-colors hover:text-cyan"
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
               <div className="mt-4 flex flex-col gap-3">
-                <a
-                  href="mailto:hello@zoe.ai?subject=Contact%20ZOE"
-                  className="rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-offwhite transition-colors hover:border-cyan hover:text-cyan"
-                >
-                  Contact Us
-                </a>
-                <a
-                  href="#book"
+                <Link
+                  href="https://calendly.com/kayan-muditastudios/zoe-diagnostic-meeting"
                   onClick={() => setOpen(false)}
-                  className="rounded-full bg-offwhite px-4 py-2 text-sm font-semibold text-charcoal"
+                  className="rounded-full bg-offwhite px-4 py-2 text-sm font-semibold text-charcoal text-center"
                 >
-                  Book Diagnostic
-                </a>
+                  Meet Our Team
+                </Link>
               </div>
             </div>
           </motion.div>

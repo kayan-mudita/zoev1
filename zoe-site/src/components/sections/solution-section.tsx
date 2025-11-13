@@ -7,20 +7,20 @@ const solutionPillars = [
   {
     title: 'Diagnose',
     timeframe: '2–3 weeks',
-    copy: 'Read-only connectors, structured interviews, and sentiment capture build a defensible model of what is really driving the miss.',
-    artifacts: ['Financial + GTM anomaly scan', 'Operator interviews & friction map', 'Founder-first readout'],
+    copy: 'Build a root-cause health model from the data you already have. No integrations, no dashboards—just the truth.',
+    artifacts: ['Financial + GTM anomaly scan', 'Operator interviews & friction mapping', 'Founder-first readout (private to the CEO)'],
   },
   {
     title: 'Prescribe',
     timeframe: '90 days',
-    copy: 'So-What Cards convert findings into plays: issue, impact $, owner, deadline, and first three moves. Operators embed until actions stick.',
-    artifacts: ['Prioritized So-What Cards', 'Stage-aware playbooks', 'Owner, impact, deadline clear'],
+    copy: 'Turn findings into sequenced recovery plays. Each lever ships with owners, impact $, deadlines, and operator support until it sticks.',
+    artifacts: ['Prioritized vitality levers (“So-What Cards”)', 'Stage-aware playbooks', 'Owners, impact $, and deadlines set'],
   },
   {
     title: 'Monitor',
     timeframe: 'Ongoing',
-    copy: 'Lightweight monthly pulse. AI shops for anomalies, surfaces ROI, and keeps the board aligned without turning into surveillance.',
-    artifacts: ['Monthly ROI pulse', 'Anomaly alerts & benchmarks', 'Board-ready summary'],
+    copy: 'Sustain momentum without surveillance. Monthly pulses, anomaly alerts, and ROI movement give boards signal—not noise.',
+    artifacts: ['Monthly health pulse', 'Anomaly alerts + ROI movement', 'Board-ready summaries without noise'],
   },
 ]
 
@@ -31,8 +31,8 @@ export const SolutionSection = () => {
       <div className="container">
         <SectionHeading
           eyebrow="How ZOE Works"
-          title="AI diagnostics fused with operator-grade intervention."
-          description="ZOE is the first AI-operator hybrid built for VC/PE portfolios. We translate noisy systems into clear, sequenced plays that boards trust and founders control."
+          title="We rebuild company health for venture-backed teams."
+          description="Zoe is the first system that fuses AI pattern detection with veteran operator playbooks to restore company health and accelerate performance."
         />
 
         <div className="relative mt-14 grid gap-8 md:grid-cols-3">

@@ -6,19 +6,19 @@ const orbitCards = [
   {
     label: 'Runway',
     metric: '+4.3 mo',
-    detail: 'Cash horizon after triage',
+    detail: 'Cash horizon regained after vitality reset',
     position: { x: -120, y: -100 },
   },
   {
     label: 'CAC',
     metric: '↓22%',
-    detail: 'After playbook deployment',
+    detail: 'After targeted GTM recovery work',
     position: { x: 140, y: -60 },
   },
   {
     label: 'Cycle Time',
     metric: '↓31%',
-    detail: 'From delivery bottleneck scan',
+    detail: 'From operational unclog + delivery acceleration',
     position: { x: -80, y: 110 },
   },
 ]
@@ -37,8 +37,6 @@ const dataParticles = [
   { id: 'p4', top: '32%', left: '22%', delay: 1.7 },
 ]
 
-const pedigreeLogos = ['Stripe', 'Palantir', 'Snowflake', 'Sequoia', 'Bain Capital', 'Dropbox']
-
 export const Hero = () => {
   return (
     <section
@@ -53,56 +51,27 @@ export const Hero = () => {
             <div className="flex flex-col gap-6">
               <span className="relative w-max overflow-hidden rounded-full border border-white/10 bg-white/5 px-5 py-1 text-xs uppercase tracking-[0.3em] text-slate/90">
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 blur-md transition-opacity duration-500 hover:opacity-100" aria-hidden="true" />
-                Portfolio growth diagnostics
+                Portfolio Health & Momentum Recovery
               </span>
               <h1 className="text-5xl font-semibold leading-[1.05] text-offwhite sm:text-6xl lg:text-7xl">
-                Fix what&apos;s killing your growth. Fast.
+                Fix what&apos;s draining performance. Fast.
               </h1>
               <p className="max-w-xl text-lg leading-relaxed text-slate/80">
-                ZOE combines AI diagnostics with operator playbooks to expose and correct
-                the root causes throttling your portfolio. We surface truth, assign owners,
-                and restore momentum in 2–3 weeks.
+                Zoe is the operational health engine that diagnoses what&apos;s weakening your company and prescribes the interventions that restore momentum in weeks—not quarters.
+              </p>
+              <p className="max-w-xl text-base text-slate/75">
+                We cut through noise, pinpoint the true causes of stall-out, and guide you through the exact sequence that gets the business healthy again.
               </p>
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
-                href="#book"
+                href="https://calendly.com/kayan-muditastudios/zoe-diagnostic-meeting"
                 className="inline-flex items-center justify-center rounded-full bg-offwhite px-6 py-3 text-sm font-semibold text-charcoal transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:shadow-glow-cyan focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
               >
-                Book Diagnostic →
-              </a>
-              <a
-                href="/board-memo-sample.pdf"
-                download
-                className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-offwhite transition-colors duration-200 hover:border-cyan hover:text-cyan focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
-              >
-                View Sample Board Memo →
+                Meet Our Team
               </a>
             </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.35, ease: 'easeOut' }}
-              className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 via-graphite/80 to-graphite/90 p-6 shadow-[0_28px_80px_rgba(8,12,18,0.55)] backdrop-blur"
-            >
-              <span className="pointer-events-none absolute -right-20 top-0 h-48 w-48 rounded-full bg-gradient-to-br from-cyan/18 to-transparent blur-3xl" aria-hidden="true" />
-              <p className="text-xs uppercase tracking-[0.35em] text-slate/70">
-                Built by executives from
-              </p>
-              <div className="mt-5 grid gap-3 sm:grid-cols-3">
-                {pedigreeLogos.map((logo) => (
-                  <span
-                    key={logo}
-                    className="flex h-11 items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-4 text-sm font-semibold uppercase tracking-[0.25em] text-offwhite/80"
-                  >
-                    {logo}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
           </div>
 
           <div className="relative hidden justify-center lg:flex">
